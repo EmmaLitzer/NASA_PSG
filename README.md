@@ -1,6 +1,6 @@
 # NASA_PSG
 
-Conduct atmospheric and surface simulations of planet and planet-like objects. 
+Conduct atmospheric and surface comparisons of planet and planet-like objects. 
 
 To use this PSG data analyser:
 

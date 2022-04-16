@@ -14,5 +14,6 @@ To use this PSG data analyser:
 To run PSG locally:
 * Install docker and follow steps at https://psg.gsfc.nasa.gov/helpapi.php#installation
 * Download desired packages (PROGRAMS, BASE, SURFACES, ATMOSPHERES)
-* In the terminal or cmd prompt go to desired directory and save config file as config.txt
-* curl --data-urlencode file@config.txt http://localhost:3000/api.php > Save_Directory/XX_File_Name.txt
+* K-tables are nice and will speed up PSG but take up >250Gb  of drive space
+* In the terminal or cmd prompt go to desired directory and save config file as psg_cfg.txt
+* curl --data-urlencode file@psg_cfg.txt http://localhost:3000/api.php > Save_Directory/XX_File_Name.txt

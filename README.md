@@ -20,4 +20,5 @@ To run PSG locally:
 * K-tables are nice and will speed up PSG but take up >250Gb  of drive space
 * In a browser, open PSG (https://psg.gsfc.nasa.gov/index.php) and configure object atmosphere, surface, and aerosol composition
 * In the terminal or cmd prompt go to desired directory and save config file as psg_cfg.txt
+* If it is the first time running psg after a sytem restart, call docker restart psg or docker start psg
 * curl --data-urlencode file@psg_cfg.txt http://localhost:3000/api.php > Save_Directory/XX_File_Name.txt

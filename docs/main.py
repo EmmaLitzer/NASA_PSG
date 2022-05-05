@@ -70,7 +70,7 @@ types['Wavelength'] = 'None'
 Ratio.append('None')
 
 
-# """
+#"""
 # Create dash app with interactive plot of data
 app = Dash(__name__)
 
@@ -89,7 +89,7 @@ app.layout = html.Div([
     Output("Graph", "figure"),
     Input('checklist', 'value')
 )
-
+#"""
 def update_line_chart(pick_type):
     np_mask = np.isin(list(types.values()), pick_type)
     data_array = np.array(list(data_dict.values()))
@@ -101,6 +101,8 @@ def update_line_chart(pick_type):
         fig.data[i].name = newname
     return fig.write_html("index.html")
 
-app.run_server(debug=False)
+
+if __name__ == "__main__":
+	app.run_server(debug=False)
 
 # """

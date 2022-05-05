@@ -99,7 +99,7 @@ def update_line_chart(pick_type):
         x = data_dict['Wavelength'][0], y=data_array, title='Molecule Spectral Radience Differance from Standard Titan Atmosphere', log_y=True)
     for i, newname in enumerate(np.array(Ratio)[np_mask]):
         fig.data[i].name = newname
-    return fig.write_html("index.html")
+    return fig.write_html("docs/SR.html")
 
 
 if __name__ == "__main__":

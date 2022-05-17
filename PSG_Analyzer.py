@@ -110,7 +110,7 @@ for i, Isotope in enumerate(Data_array):
 # plt.xlim(2.5,2.9)
 plt.title(Pic_Titles[1])
 plt.ylabel("Spectral Radiance"+ r' ($\frac{W}{sr *m^2 *µm}$)') 
-plt.xlabel("Wavelength" + ' (µm)'a)
+plt.xlabel("Wavelength" + ' (µm)')
 # plt.yscale('log')
 # plt.xlim(4.5,4.75)
 # plt.ylim(0,5e-4)
